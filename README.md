@@ -1,16 +1,53 @@
-# React + Vite
+# JOCKY Documentation
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Official documentation website for **JOCKY — Forensic Investigation Language**.
 
-Currently, two official plugins are available:
+This repository contains the documentation and presentation website for JOCKY and the Mahoraga forensic compiler framework.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## About JOCKY
 
-## React Compiler
+JOCKY is a domain-specific language designed for describing reproducible forensic investigations.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+It provides a structured way to express forensic intent and compile it into a platform-independent Forensic IR that can be executed through native system providers.
 
-## Expanding the ESLint configuration
+The broader Mahoraga framework connects:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- JOCKY DSL
+- Compiler & semantic validation
+- Forensic IR / MLIR
+- Native C++ runtime
+- Linux & Windows providers
+- Evidence collection and cryptographic sealing
+- STIX 2.1 threat-intelligence output
+- Jocky Forensic Workbench
+
+## Documentation
+
+The website covers:
+
+- **Installation** — Set up the JOCKY/Mahoraga development environment
+- **Quick Start** — Write and execute your first JOCKY investigation
+- **What is JOCKY?** — Understand the language and its purpose
+- **How JOCKY Works** — Learn about the compiler and execution pipeline
+- **Architecture** — Explore the major components of Mahoraga
+- **Forensic Execution** — Understand capability, provider and evidence flow
+- **Technology** — Technologies used throughout the project
+- **What We Built** — Overview of the major project components
+- **Learn More** — Repository and project resources
+
+## Tech Stack
+
+This documentation website is built with:
+
+- React
+- Vite
+- JavaScript
+- Tailwind CSS
+
+## Local Development
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/Shreyasi53/jocky-docs.git
+cd jocky-docs
