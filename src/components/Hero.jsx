@@ -7,9 +7,12 @@ export default function Hero() {
           Domain-Specific Forensic Language
         </div>
 
-        <h1 className="text-3xl sm:text-4xl font-extrabold text-[#f5f5f5] tracking-tight font-sans">
-          JOCKY
-        </h1>
+        <div className="flex items-center gap-3 pt-1">
+          <img src="/jocky.png" alt="Jocky Logo" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-[#f5f5f5] tracking-tight font-sans">
+            JOCKY
+          </h1>
+        </div>
 
         <p className="text-lg font-medium text-[#a1a1aa] font-sans tracking-tight">
           Forensic Investigation Language

@@ -44,7 +44,7 @@ export default function QuickStart() {
           </p>
           <TerminalCard
             title="Terminal"
-            code={`jocky run host_sweep.jocky\n\n[CLI OUTPUT PLACEHOLDER — Execution logs and STIX 2.1 evidence bundle output will be displayed here upon execution]`}
+            code="jocky run host_sweep.jocky"
           />
         </div>
 

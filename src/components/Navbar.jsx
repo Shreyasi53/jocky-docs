@@ -22,10 +22,8 @@ export default function Navbar({ onToggleMobileMenu }) {
               </svg>
             </button>
 
-            <a href="#hero" className="flex items-center gap-2 group">
-              <span className="w-5 h-5 rounded-sm bg-[#111111] border border-[#00c896]/40 flex items-center justify-center font-mono font-bold text-[#00c896] text-[10px]">
-                JK
-              </span>
+            <a href="#hero" className="flex items-center gap-2.5 group">
+              <img src="/jocky.png" alt="Jocky Logo" className="w-6 h-6 object-contain drop-shadow" />
               <div className="flex items-baseline gap-2">
                 <span className="font-mono font-bold text-sm text-[#f5f5f5] tracking-wider transition-colors">
                   JOCKY
