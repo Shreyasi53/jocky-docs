@@ -1,0 +1,40 @@
+import SectionHeader from '../components/SectionHeader';
+
+export default function WhatWeBuilt() {
+  const items = [
+    { title: 'DSL Specification & Grammar', note: 'Formal syntax and grammar rules for forensic collection requests.' },
+    { title: 'Lexer & Parser Frontend', note: 'AST generation and syntax validation toolchain.' },
+    { title: 'Forensic Intermediate Representation (IR)', note: 'Intermediate representation schema for forensic ops.' },
+    { title: 'Extensible Provider Architecture', note: 'Modular OS collection engines for Windows and Linux.' },
+    { title: 'Cryptographic Evidence Sealing', note: 'Automated SHA-256 hash digests and metadata binding.' },
+    { title: 'STIX 2.1 Format Serialization', note: 'Standardized threat intelligence format export.' },
+    { title: 'Command-Line Interface (CLI)', note: 'Developer and practitioner compiler runner.' },
+  ];
+
+  return (
+    <section id="what-we-built" className="scroll-mt-20 space-y-6">
+      <SectionHeader
+        number="08"
+        title="What We Built"
+        description="Overview of core system modules developed within the JOCKY project."
+      />
+
+      <div className="space-y-4 font-sans">
+        {items.map((item, index) => (
+          <div
+            key={item.title}
+            className="py-3 border-b border-neutral-800/60 last:border-b-0 flex items-start gap-4"
+          >
+            <span className="font-mono text-xs font-bold text-emerald-400 shrink-0 mt-0.5">
+              0{index + 1}.
+            </span>
+            <div className="space-y-0.5">
+              <h3 className="text-base font-bold text-neutral-100 font-sans">{item.title}</h3>
+              <p className="text-sm text-neutral-400 font-sans leading-relaxed">{item.note}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+}
