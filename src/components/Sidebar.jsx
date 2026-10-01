@@ -51,28 +51,59 @@ export default function Sidebar({ mobileOpen, onClose }) {
       'learn-more',
     ];
 
-    const observerCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveId(`#${entry.target.id}`);
+    const handleScroll = () => {
+      // Top of page
+      if (window.scrollY < 80) {
+        setActiveId('#hero');
+        return;
+      }
+
+      // Bottom of page
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 50) {
+        setActiveId('#learn-more');
+        return;
+      }
+
+      // Section scroll spy
+      const offset = 120;
+      let currentActive = '#hero';
+
+      for (let i = 0; i < sectionIds.length; i++) {
+        const id = sectionIds[i];
+        const element = document.getElementById(id);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          if (rect.top <= offset) {
+            currentActive = `#${id}`;
+          } else {
+            break;
+          }
         }
-      });
+      }
+
+      setActiveId(currentActive);
     };
 
-    const observerOptions = {
-      root: null,
-      rootMargin: '-70px 0px -65% 0px',
-      threshold: 0,
+    handleScroll();
+
+    let ticking = false;
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(() => {
+          handleScroll();
+          ticking = false;
+        });
+        ticking = true;
+      }
     };
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
 
-    sectionIds.forEach((id) => {
-      const el = document.getElementById(id);
-      if (el) observer.observe(el);
-    });
-
-    return () => observer.disconnect();
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, []);
 
   const navContent = (
