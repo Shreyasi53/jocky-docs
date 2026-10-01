@@ -20,13 +20,13 @@ export default function QuickStart() {
       />
 
       <div className="space-y-6 font-sans">
-        <p className="text-base text-neutral-300 leading-relaxed max-w-3xl">
-          Create a new file named <code className="text-emerald-400 font-mono text-sm">host_sweep.jocky</code> and define your investigation routines using JOCKY DSL primitives:
+        <p className="text-base text-[#a1a1aa] leading-relaxed max-w-3xl">
+          Create a new file named <code className="text-[#a1a1aa] font-mono text-xs bg-[#111111] px-1 py-0.5 rounded border border-[#252525]">host_sweep.jocky</code> and define your investigation routines using JOCKY DSL primitives:
         </p>
 
         {/* Code Example Block */}
         <div>
-          <div className="text-xs font-mono text-neutral-400 mb-1">
+          <div className="text-xs font-mono text-[#71717a] mb-1">
             host_sweep.jocky
           </div>
           <CodeBlock
@@ -38,21 +38,21 @@ export default function QuickStart() {
 
         {/* Command & Execution */}
         <div className="space-y-2 pt-4">
-          <h4 className="text-base font-bold text-neutral-100 font-sans">Executing the Investigation</h4>
-          <p className="text-sm text-neutral-400 leading-relaxed">
+          <h4 className="text-base font-bold text-[#f5f5f5] font-sans">Executing the Investigation</h4>
+          <p className="text-sm text-[#a1a1aa] leading-relaxed">
             Run the compiler CLI runner targeting your specification file:
           </p>
           <TerminalCard
             title="Terminal"
-            code={`$ jocky run host_sweep.jocky\n\n[CLI OUTPUT PLACEHOLDER — Execution logs and STIX 2.1 evidence bundle output will be displayed here upon execution]`}
+            code={`jocky run host_sweep.jocky\n\n[CLI OUTPUT PLACEHOLDER — Execution logs and STIX 2.1 evidence bundle output will be displayed here upon execution]`}
           />
         </div>
 
         {/* Explanation */}
-        <div className="pt-2 text-sm text-neutral-400 leading-relaxed space-y-2">
-          <h4 className="text-sm font-bold text-neutral-200 font-sans">Specification Breakdown</h4>
+        <div className="pt-2 text-sm text-[#a1a1aa] leading-relaxed space-y-2">
+          <h4 className="text-sm font-bold text-[#f5f5f5] font-sans">Specification Breakdown</h4>
           <p>
-            The specification declares an investigation block named <code className="text-emerald-400 font-mono text-xs">"Host Sweep"</code>. It collects three primitives (<code className="text-neutral-200 font-mono text-xs">system_info</code>, <code className="text-neutral-200 font-mono text-xs">process_list</code>, <code className="text-neutral-200 font-mono text-xs">network_connections</code>), binds them to symbolic names (<code className="text-neutral-300 font-mono text-xs">sys</code>, <code className="text-neutral-300 font-mono text-xs">procs</code>, <code className="text-neutral-300 font-mono text-xs">conns</code>), and emits a cryptographically sealed evidence package.
+            The specification declares an investigation block named <code className="text-[#a1a1aa] font-mono text-xs bg-[#111111] px-1 py-0.5 rounded border border-[#252525]">"Host Sweep"</code>. It collects three primitives (<code className="text-[#a1a1aa] font-mono text-xs">system_info</code>, <code className="text-[#a1a1aa] font-mono text-xs">process_list</code>, <code className="text-[#a1a1aa] font-mono text-xs">network_connections</code>), binds them to symbolic names (<code className="text-[#a1a1aa] font-mono text-xs">sys</code>, <code className="text-[#a1a1aa] font-mono text-xs">procs</code>, <code className="text-[#a1a1aa] font-mono text-xs">conns</code>), and emits a cryptographically sealed evidence package.
           </p>
         </div>
       </div>

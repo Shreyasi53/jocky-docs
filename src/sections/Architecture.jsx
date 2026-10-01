@@ -13,8 +13,8 @@ export default function Architecture() {
       <div className="space-y-6 font-sans">
         <ArchitectureDiagram />
 
-        <div className="text-base text-neutral-300 leading-relaxed max-w-3xl space-y-3 font-sans">
-          <h4 className="text-base font-bold text-neutral-100">Decoupled Compiler Abstraction</h4>
+        <div className="text-base text-[#a1a1aa] leading-relaxed max-w-3xl space-y-3 font-sans">
+          <h4 className="text-base font-bold text-[#f5f5f5]">Decoupled Compiler Abstraction</h4>
           <p>
             The JOCKY architecture maintains clean separation between high-level investigation semantics and low-level host execution. High-level DSL collection statements are compiled to target-agnostic Forensic IR, allowing seamless extension of OS providers (Linux, Windows) without altering existing investigation scripts.
           </p>

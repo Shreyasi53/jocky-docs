@@ -6,7 +6,7 @@ export default function Navbar({ onToggleMobileMenu }) {
   ];
 
   return (
-    <header className="sticky top-0 z-40 bg-neutral-950/90 backdrop-blur-md border-b border-neutral-800/60">
+    <header className="sticky top-0 z-40 bg-[#090909]/90 backdrop-blur-md border-b border-[#252525]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-14">
           {/* Logo & Branding */}
@@ -14,7 +14,7 @@ export default function Navbar({ onToggleMobileMenu }) {
             <button
               type="button"
               onClick={onToggleMobileMenu}
-              className="lg:hidden text-neutral-400 hover:text-neutral-100 focus:outline-none p-1 rounded hover:bg-neutral-900 border border-neutral-800"
+              className="lg:hidden text-[#71717a] hover:text-[#f5f5f5] focus:outline-none p-1 rounded hover:bg-[#111111] border border-[#252525]"
               aria-label="Open documentation navigation"
             >
               <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -23,14 +23,14 @@ export default function Navbar({ onToggleMobileMenu }) {
             </button>
 
             <a href="#hero" className="flex items-center gap-2 group">
-              <span className="w-5 h-5 rounded-sm bg-neutral-900 border border-emerald-500/40 flex items-center justify-center font-mono font-bold text-emerald-400 text-[10px]">
+              <span className="w-5 h-5 rounded-sm bg-[#111111] border border-[#00c896]/40 flex items-center justify-center font-mono font-bold text-[#00c896] text-[10px]">
                 JK
               </span>
               <div className="flex items-baseline gap-2">
-                <span className="font-mono font-bold text-sm text-neutral-100 tracking-wider group-hover:text-emerald-400 transition-colors">
+                <span className="font-mono font-bold text-sm text-[#f5f5f5] tracking-wider transition-colors">
                   JOCKY
                 </span>
-                <span className="text-[10px] font-mono text-neutral-500 uppercase tracking-widest border-l border-neutral-800 pl-2">
+                <span className="text-[10px] font-mono text-[#71717a] uppercase tracking-widest border-l border-[#252525] pl-2">
                   FORENSIC DSL
                 </span>
               </div>
@@ -44,20 +44,20 @@ export default function Navbar({ onToggleMobileMenu }) {
                 <a
                   key={link.name}
                   href={link.href}
-                  className="text-neutral-400 hover:text-neutral-100 transition-colors text-xs sm:text-sm"
+                  className="text-[#a1a1aa] hover:text-[#f5f5f5] transition-colors text-xs sm:text-sm"
                 >
                   {link.name}
                 </a>
               ))}
             </nav>
 
-            <div className="h-4 w-px bg-neutral-800 hidden sm:block" />
+            <div className="h-4 w-px bg-[#252525] hidden sm:block" />
 
             <a
               href="https://github.com/Shreyasi53/mahoraga"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-neutral-400 hover:text-neutral-100 transition-colors p-1 rounded hover:bg-neutral-900"
+              className="text-[#71717a] hover:text-[#f5f5f5] transition-colors p-1 rounded hover:bg-[#111111]"
               title="GitHub"
               aria-label="GitHub"
             >

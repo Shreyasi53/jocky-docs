@@ -14,12 +14,12 @@ export default function TechnologyGrid() {
       {technologies.map((tech) => (
         <div
           key={tech.name}
-          className="p-3.5 rounded border border-neutral-800 bg-neutral-900/40 hover:border-neutral-700 transition-colors flex items-start justify-between"
+          className="p-3.5 rounded border border-[#252525] bg-[#111111]/40 hover:border-[#71717a] transition-colors flex items-start justify-between"
         >
           <div className="space-y-1">
-            <div className="font-mono text-sm font-bold text-neutral-100">{tech.name}</div>
-            <div className="text-emerald-400 font-medium text-xs">{tech.role}</div>
-            <div className="text-neutral-400 text-[11px] font-sans pt-1">{tech.detail}</div>
+            <div className="font-mono text-sm font-bold text-[#f5f5f5]">{tech.name}</div>
+            <div className="text-[#71717a] font-medium text-xs">{tech.role}</div>
+            <div className="text-[#a1a1aa] text-[11px] font-sans pt-1">{tech.detail}</div>
           </div>
         </div>
       ))}

@@ -23,14 +23,14 @@ export default function WhatWeBuilt() {
         {items.map((item, index) => (
           <div
             key={item.title}
-            className="py-3 border-b border-neutral-800/60 last:border-b-0 flex items-start gap-4"
+            className="py-3 border-b border-[#252525] last:border-b-0 flex items-start gap-4"
           >
-            <span className="font-mono text-xs font-bold text-emerald-400 shrink-0 mt-0.5">
+            <span className="font-mono text-xs font-bold text-[#00c896] shrink-0 mt-0.5">
               0{index + 1}.
             </span>
             <div className="space-y-0.5">
-              <h3 className="text-base font-bold text-neutral-100 font-sans">{item.title}</h3>
-              <p className="text-sm text-neutral-400 font-sans leading-relaxed">{item.note}</p>
+              <h3 className="text-base font-bold text-[#f5f5f5] font-sans">{item.title}</h3>
+              <p className="text-sm text-[#a1a1aa] font-sans leading-relaxed">{item.note}</p>
             </div>
           </div>
         ))}

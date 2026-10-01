@@ -110,10 +110,10 @@ export default function Sidebar({ mobileOpen, onClose }) {
     <nav className="space-y-5 text-[13px] font-sans">
       {navigation.map((section) => (
         <div key={section.group} className="space-y-1">
-          <h4 className="font-mono text-[10px] font-bold text-neutral-400 uppercase tracking-wider">
+          <h4 className="font-mono text-[10px] font-bold text-[#71717a] uppercase tracking-wider">
             {section.group}
           </h4>
-          <ul className="space-y-0.5 border-l border-neutral-800/80">
+          <ul className="space-y-0.5 border-l border-[#252525]">
             {section.items.map((item) => {
               const isActive = activeId === item.href;
               return (
@@ -128,8 +128,8 @@ export default function Sidebar({ mobileOpen, onClose }) {
                     rel={item.external ? 'noopener noreferrer' : undefined}
                     className={`block pl-3 py-0.5 -ml-px transition-colors leading-normal ${
                       isActive
-                        ? 'text-emerald-400 font-medium border-l-2 border-emerald-400'
-                        : 'text-neutral-400 hover:text-neutral-200 border-l border-transparent'
+                        ? 'text-[#00c896] font-medium border-l border-[#00c896]'
+                        : 'text-[#a1a1aa] hover:text-[#f5f5f5] border-l border-transparent'
                     }`}
                   >
                     {item.name}
@@ -146,7 +146,7 @@ export default function Sidebar({ mobileOpen, onClose }) {
   return (
     <>
       {/* Desktop Sidebar */}
-      <aside className="w-56 shrink-0 hidden lg:block sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto py-5 pr-4 border-r border-neutral-800/60">
+      <aside className="w-56 shrink-0 hidden lg:block sticky top-14 h-[calc(100vh-3.5rem)] overflow-y-auto py-5 pr-4 border-r border-[#252525]">
         {navContent}
       </aside>
 
@@ -157,15 +157,15 @@ export default function Sidebar({ mobileOpen, onClose }) {
             className="fixed inset-0 bg-black/70 backdrop-blur-sm"
             onClick={onClose}
           />
-          <div className="relative w-64 max-w-full bg-neutral-950 border-r border-neutral-800 p-5 overflow-y-auto z-10 space-y-5">
-            <div className="flex items-center justify-between border-b border-neutral-800 pb-3">
-              <div className="flex items-center gap-2 font-mono text-xs font-bold text-neutral-100">
-                <span className="text-emerald-400">JK</span> JOCKY DOCS
+          <div className="relative w-64 max-w-full bg-[#090909] border-r border-[#252525] p-5 overflow-y-auto z-10 space-y-5">
+            <div className="flex items-center justify-between border-b border-[#252525] pb-3">
+              <div className="flex items-center gap-2 font-mono text-xs font-bold text-[#f5f5f5]">
+                <span className="text-[#00c896]">JK</span> JOCKY DOCS
               </div>
               <button
                 type="button"
                 onClick={onClose}
-                className="text-neutral-400 hover:text-neutral-100 p-1 font-mono text-xs"
+                className="text-[#71717a] hover:text-[#f5f5f5] p-1 font-mono text-xs"
                 aria-label="Close menu"
               >
                 ✕

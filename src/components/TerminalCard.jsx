@@ -16,18 +16,18 @@ export default function TerminalCard({ tabs, code, title = 'Terminal', expected 
   };
 
   return (
-    <div className="rounded-sm border border-neutral-800 bg-neutral-900/90 overflow-hidden font-mono text-xs sm:text-sm shadow-sm">
+    <div className="rounded-sm border border-[#252525] bg-[#111111]/90 overflow-hidden font-mono text-xs sm:text-sm shadow-sm">
       {/* Header Bar */}
-      <div className="flex flex-wrap items-center justify-between px-3.5 py-2 bg-neutral-950 border-b border-neutral-800 gap-2">
+      <div className="flex flex-wrap items-center justify-between px-3.5 py-2 bg-[#090909] border-b border-[#252525] gap-2">
         <div className="flex items-center gap-3">
-          <span className="flex items-center gap-1.5 text-xs text-neutral-400">
-            <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
-            <span className="font-semibold text-neutral-300">{title}</span>
+          <span className="flex items-center gap-1.5 text-xs text-[#a1a1aa]">
+            <span className="w-2 h-2 rounded-full bg-[#00c896]"></span>
+            <span className="font-semibold text-[#f5f5f5]">{title}</span>
           </span>
 
           {/* OS Tabs */}
           {tabs && tabs.length > 1 && (
-            <div className="flex items-center gap-1 bg-neutral-900 p-0.5 rounded border border-neutral-800 text-[11px]">
+            <div className="flex items-center gap-1 bg-[#111111] p-0.5 rounded border border-[#252525] text-[11px]">
               {tabs.map((tab, idx) => (
                 <button
                   key={tab.label}
@@ -35,8 +35,8 @@ export default function TerminalCard({ tabs, code, title = 'Terminal', expected 
                   onClick={() => setActiveTab(idx)}
                   className={`px-2 py-0.5 rounded-sm transition-colors ${
                     activeTab === idx
-                      ? 'bg-neutral-800 text-emerald-400 font-semibold'
-                      : 'text-neutral-400 hover:text-neutral-200'
+                      ? 'bg-[#252525] text-[#f5f5f5] font-semibold'
+                      : 'text-[#71717a] hover:text-[#f5f5f5]'
                   }`}
                 >
                   {tab.label}
@@ -48,13 +48,13 @@ export default function TerminalCard({ tabs, code, title = 'Terminal', expected 
 
         {/* Copy Button & Language Label */}
         <div className="flex items-center gap-3 ml-auto">
-          <span className="text-neutral-600 text-[10px] uppercase tracking-wider hidden sm:inline">
+          <span className="text-[#71717a] text-[10px] uppercase tracking-wider hidden sm:inline">
             {currentLanguage}
           </span>
           <button
             type="button"
             onClick={handleCopy}
-            className="text-neutral-400 hover:text-neutral-200 transition-colors text-[11px] px-2 py-0.5 rounded border border-neutral-800 hover:border-neutral-700 bg-neutral-900 font-mono"
+            className="text-[#a1a1aa] hover:text-[#f5f5f5] transition-colors text-[11px] px-2 py-0.5 rounded border border-[#252525] hover:border-[#71717a] bg-[#111111] font-mono"
           >
             {copied ? 'Copied!' : 'Copy'}
           </button>
@@ -62,19 +62,19 @@ export default function TerminalCard({ tabs, code, title = 'Terminal', expected 
       </div>
 
       {/* Code Body */}
-      <div className="p-4 overflow-x-auto text-neutral-200 leading-relaxed font-mono">
+      <div className="p-4 overflow-x-auto text-[#a1a1aa] leading-relaxed font-mono">
         <pre className="whitespace-pre">
           <code>
             {activeCode && activeCode.split('\n').map((line, i) => (
               <div key={i} className="table-row">
-                <span className="table-cell select-none text-neutral-600 pr-3 text-right text-[11px]">{i + 1}</span>
+                <span className="table-cell select-none text-[#71717a] pr-3 text-right text-[11px]">{i + 1}</span>
                 <span className="table-cell">
                   {line.startsWith('#') ? (
-                    <span className="text-neutral-500 italic">{line}</span>
+                    <span className="text-[#71717a] italic">{line}</span>
                   ) : line.startsWith('git') || line.startsWith('python') || line.startsWith('pip') || line.startsWith('cmake') || line.startsWith('make') || line.startsWith('uvicorn') || line.startsWith('cd') || line.startsWith('mkdir') || line.startsWith('npm') || line.startsWith('docker') || line.startsWith('source') || line.startsWith('.') ? (
                     <span>
-                      <span className="text-emerald-400 select-none">$ </span>
-                      <span className="text-neutral-100">{line}</span>
+                      <span className="text-[#71717a] select-none">$ </span>
+                      <span className="text-[#f5f5f5]">{line}</span>
                     </span>
                   ) : (
                     <span>{line}</span>
@@ -88,9 +88,9 @@ export default function TerminalCard({ tabs, code, title = 'Terminal', expected 
 
       {/* Expected Indicator */}
       {expected && (
-        <div className="px-3.5 py-2 bg-neutral-950/90 border-t border-neutral-800 text-[11px] text-neutral-400 flex flex-wrap items-center justify-between gap-2">
-          <span className="text-neutral-500">Expected artifact / output:</span>
-          <span className="text-emerald-400 font-mono font-medium bg-emerald-950/50 px-2 py-0.5 rounded border border-emerald-900/60">
+        <div className="px-3.5 py-2 bg-[#090909]/90 border-t border-[#252525] text-[11px] text-[#a1a1aa] flex flex-wrap items-center justify-between gap-2">
+          <span className="text-[#71717a]">Expected artifact / output:</span>
+          <span className="text-[#a1a1aa] font-mono font-medium bg-[#111111] px-2 py-0.5 rounded border border-[#252525]">
             {expected}
           </span>
         </div>

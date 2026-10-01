@@ -18,7 +18,7 @@ function App() {
   const [mobileSidebarOpen, setMobileSidebarOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-neutral-950 text-neutral-200 font-sans selection:bg-emerald-500/20 selection:text-emerald-300">
+    <div className="min-h-screen bg-[#090909] text-[#a1a1aa] font-sans selection:bg-[#00c896]/20 selection:text-[#00c896]">
       <Navbar onToggleMobileMenu={() => setMobileSidebarOpen(!mobileSidebarOpen)} />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
