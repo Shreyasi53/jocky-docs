@@ -5,7 +5,7 @@ export default function LearnMore() {
     {
       title: 'GitHub Organization',
       description: 'Explore source code repositories, language specs, and compiler source.',
-      href: 'https://github.com',
+      href: 'https://github.com/Debashich/mahoraga.git',
       badge: 'Repository',
     },
     {

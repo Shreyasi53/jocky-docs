@@ -32,7 +32,7 @@ export default function Sidebar({ mobileOpen, onClose }) {
       group: 'RESOURCES',
       items: [
         { name: 'Learn More', href: '#learn-more' },
-        { name: 'GitHub', href: 'https://github.com/Shreyasi53/mahoraga', external: true },
+        { name: 'GitHub', href: 'https://github.com/Debashich/mahoraga', external: true },
       ],
     },
   ];

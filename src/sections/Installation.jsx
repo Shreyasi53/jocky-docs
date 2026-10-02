@@ -59,12 +59,12 @@ export default function Installation() {
           </div>
 
           <p className="text-xs sm:text-sm text-[#a1a1aa] leading-relaxed max-w-2xl">
-            Clone the Mahoraga repository from GitHub and move into the project workspace directory.
+            Clone the Mahoraga repository from GitHub and move into the project workspace.
           </p>
 
           <TerminalCard
             title="Terminal"
-            code={`git clone <repository-url> mahoraga\ncd mahoraga`}
+            code={`git clone https://github.com/Debashich/mahoraga.git\ncd mahoraga`}
           />
         </div>
 

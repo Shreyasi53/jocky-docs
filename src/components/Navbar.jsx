@@ -52,7 +52,7 @@ export default function Navbar({ onToggleMobileMenu }) {
             <div className="h-4 w-px bg-[#252525] hidden sm:block" />
 
             <a
-              href="https://github.com/Shreyasi53/mahoraga"
+              href="https://github.com/Debashich/mahoraga"
               target="_blank"
               rel="noopener noreferrer"
               className="text-[#71717a] hover:text-[#f5f5f5] transition-colors p-1 rounded hover:bg-[#111111]"

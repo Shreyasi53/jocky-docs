@@ -24,7 +24,7 @@ export default function Footer() {
               Architecture
             </a>
             <a
-              href="https://github.com"
+              href="https://github.com/Shreyasi53/mahoraga"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#f5f5f5] transition-colors flex items-center gap-1"
