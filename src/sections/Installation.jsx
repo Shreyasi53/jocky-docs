@@ -84,7 +84,7 @@ export default function Installation() {
             title="Terminal"
             tabs={[
               {
-                label: 'Linux / macOS',
+                label: 'Linux',
                 language: 'bash',
                 code: `python3 -m venv .venv\nsource .venv/bin/activate`,
               },
@@ -156,7 +156,7 @@ export default function Installation() {
 
           <TerminalCard
             title="Terminal"
-            code={`uvicorn cmi.server:app --reload --host 0.0.0.0 --port 8000`}
+            code={`uvicorn cmi.server:app --host 0.0.0.0 --port 8000`}
           />
 
           <div className="p-2.5 rounded border border-[#252525] bg-[#111111]/40 font-mono text-xs flex flex-wrap items-center justify-between gap-2">

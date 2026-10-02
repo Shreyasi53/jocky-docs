@@ -59,7 +59,7 @@ export default function QuickStart() {
               title="Terminal"
               tabs={[
                 {
-                  label: 'Linux / Ubuntu (Your Teammate)',
+                  label: 'Linux / Ubuntu',
                   language: 'bash',
                   code: `./mahoraga build examples/endpoint_triage.jocky`,
                 },

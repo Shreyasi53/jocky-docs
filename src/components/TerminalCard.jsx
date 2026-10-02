@@ -85,8 +85,8 @@ export default function TerminalCard({ tabs, code, title = 'Terminal', expected 
       {/* Expected Indicator */}
       {expected && (
         <div className="px-4 py-2 bg-[#121215] border-t border-[#27272a] text-[11px] text-[#a1a1aa] flex flex-wrap items-center justify-between gap-2">
-          <span className="text-[#71717a]">Expected artifact / output:</span>
-          <span className="text-[#C9A24A] font-mono font-medium bg-[#18181b] px-2.5 py-0.5 rounded border border-[#27272a]">
+          <span className="text-[#71717a] shrink-0">Expected artifact / output:</span>
+          <span className="text-[#C9A24A] font-mono font-medium bg-[#18181b] px-2.5 py-0.5 rounded border border-[#27272a] break-all max-w-full">
             {expected}
           </span>
         </div>

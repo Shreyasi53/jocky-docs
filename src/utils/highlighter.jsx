@@ -107,8 +107,8 @@ export function highlightToken(token, index, language = 'jocky') {
   }
 
   // Text / Log Output
-  if (lang === 'text' || lang === 'plain') {
-    if (['[1/2]', '[2/2]', '[OK]', 'LIVE', 'CONNECTED', 'Docs', 'Terminal'].includes(token)) {
+  if (lang === 'text' || lang === 'plain' || token.startsWith('[')) {
+    if (/^\[[0-9]+\/[0-9]+\]$/.test(token) || /^\[[A-Za-z0-9_]+\]$/.test(token)) {
       return <span key={index} className="text-[#D4A72C] font-semibold">{token}</span>;
     }
     if (token === '->' || token === '=>') {
@@ -136,7 +136,7 @@ export function highlightToken(token, index, language = 'jocky') {
 export function highlightLine(line, language = 'jocky') {
   if (line === undefined || line === null) return '';
   if (line === '') return '\n';
-  const tokenRegex = /("[^"]*"|'[^']*'|`[^`]*`|\/\/[^\n]*|\/\*[\s\S]*?\*\/|#[^\n]*|\b[A-Za-z_][A-Za-z0-9_.-]*\b|->|=>|==|!=|\.\/|\.\\|[{}()\[\]=;,.:+\-*\/]|[^\s"A-Za-z0-9_{}()\[\]=;,.:+\-*\/]+|\s+)/g;
+  const tokenRegex = /("[^"]*"|'[^']*'|`[^`]*`|\/\/[^\n]*|\/\*[\s\S]*?\*\/|#[^\n]*|\[[0-9]+\/[0-9]+\]|\[[A-Za-z0-9_]+\]|\b[A-Za-z_][A-Za-z0-9_.-]*\b|->|=>|==|!=|\.\/|\.\\|[{}()\[\]=;,.:+\-*\/]|[^\s"A-Za-z0-9_{}()\[\]=;,.:+\-*\/]+|\s+)/g;
   const matches = line.match(tokenRegex) || [line];
   return matches.map((token, i) => highlightToken(token, i, language));
 }
