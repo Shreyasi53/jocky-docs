@@ -35,8 +35,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 pt-6 border-t border-[#252525] flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-[#71717a] font-mono">
-          <div>© {new Date().getFullYear()} JOCKY Language Specification. Open Documentation.</div>
-          <div>Minimal & Technical Forensic DSL Architecture</div>
+          <div>© 2026 Prometheus Loki</div>
         </div>
       </div>
     </footer>
