@@ -12,10 +12,10 @@ export default function Installation() {
       />
 
       <div className="space-y-6 font-sans">
-        {/* 01 Requirements */}
+        {/* i Requirements */}
         <div className="space-y-2.5 pt-3 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#B08A3E]">01.</span>
+            <span className="text-[#B08A3E]">i.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Requirements</h3>
           </div>
 
@@ -52,10 +52,10 @@ export default function Installation() {
           </div>
         </div>
 
-        {/* 02 Clone the repository */}
+        {/* ii Clone the repository */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#B08A3E]">02.</span>
+            <span className="text-[#B08A3E]">ii.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Clone the repository</h3>
           </div>
 
@@ -69,10 +69,10 @@ export default function Installation() {
           />
         </div>
 
-        {/* 03 Python environment */}
+        {/* iii Python environment */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#B08A3E]">03.</span>
+            <span className="text-[#B08A3E]">iii.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Python environment</h3>
           </div>
 
@@ -97,10 +97,10 @@ export default function Installation() {
           />
         </div>
 
-        {/* 04 Install dependencies */}
+        {/* iv Install dependencies */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#B08A3E]">04.</span>
+            <span className="text-[#B08A3E]">iv.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Install dependencies</h3>
           </div>
 
@@ -114,10 +114,10 @@ export default function Installation() {
           />
         </div>
 
-        {/* 05 Build native runtime */}
+        {/* v Build native runtime */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#B08A3E]">05.</span>
+            <span className="text-[#B08A3E]">v.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Build native runtime</h3>
           </div>
 
@@ -143,10 +143,10 @@ export default function Installation() {
           />
         </div>
 
-        {/* 06 Start CMI backend */}
+        {/* vi Start CMI backend */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#B08A3E]">06.</span>
+            <span className="text-[#B08A3E]">vi.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Start backend</h3>
           </div>
 
@@ -172,10 +172,10 @@ export default function Installation() {
           </div>
         </div>
 
-        {/* 07 Start frontend */}
+        {/* vii Start frontend */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#B08A3E]">07.</span>
+            <span className="text-[#B08A3E]">vii.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Start frontend</h3>
           </div>
 
@@ -196,10 +196,10 @@ export default function Installation() {
           </div>
         </div>
 
-        {/* 08 Docker setup */}
+        {/* viii Docker setup */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#B08A3E]">08.</span>
+            <span className="text-[#B08A3E]">viii.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Docker setup</h3>
           </div>
 
@@ -224,10 +224,10 @@ export default function Installation() {
           />
         </div>
 
-        {/* 09 Verify installation */}
+        {/* ix Verify installation */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#B08A3E]">09.</span>
+            <span className="text-[#B08A3E]">ix.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Verify installation</h3>
           </div>
 

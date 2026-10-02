@@ -27,9 +27,9 @@ export default function QuickStart() {
       <div className="space-y-8 font-sans">
         {/* Step 1: Write Spec */}
         <div className="space-y-3 pt-2">
-          <div className="flex items-center gap-2.5 font-mono text-sm font-bold text-[#f5f5f5]">
-            <span className="w-6 h-6 rounded-full bg-[#B08A3E]/10 text-[#B08A3E] border border-[#B08A3E]/30 flex items-center justify-center font-mono text-xs font-bold">1</span>
-            <h3>Write Investigation Specification</h3>
+          <div className="flex items-center gap-2 font-mono text-xs font-bold">
+            <span className="text-[#B08A3E]">i.</span>
+            <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Write Investigation Specification</h3>
           </div>
           <p className="text-sm text-[#a1a1aa] leading-relaxed max-w-3xl pl-8">
             Create a file named <code className="text-[#a1a1aa] font-mono text-xs bg-[#111111] px-1.5 py-0.5 rounded border border-[#252525]">examples/endpoint_triage.jocky</code> and define your investigation routines:
@@ -46,9 +46,9 @@ export default function QuickStart() {
 
         {/* Step 2: Build Payload */}
         <div className="space-y-3 border-t border-[#252525] pt-6">
-          <div className="flex items-center gap-2.5 font-mono text-sm font-bold text-[#f5f5f5]">
-            <span className="w-6 h-6 rounded-full bg-[#B08A3E]/10 text-[#B08A3E] border border-[#B08A3E]/30 flex items-center justify-center font-mono text-xs font-bold">2</span>
-            <h3>Build the JOCKY Investigation</h3>
+          <div className="flex items-center gap-2 font-mono text-xs font-bold">
+            <span className="text-[#B08A3E]">ii.</span>
+            <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Build the JOCKY Investigation</h3>
           </div>
           <p className="text-sm text-[#a1a1aa] leading-relaxed max-w-3xl pl-8">
             Compile and encrypt the Jocky file into the portable payload in <strong>just one command</strong>:
@@ -86,9 +86,9 @@ export default function QuickStart() {
 
         {/* Step 3: Execute Payload */}
         <div className="space-y-3 border-t border-[#252525] pt-6">
-          <div className="flex items-center gap-2.5 font-mono text-sm font-bold text-[#f5f5f5]">
-            <span className="w-6 h-6 rounded-full bg-[#B08A3E]/10 text-[#B08A3E] border border-[#B08A3E]/30 flex items-center justify-center font-mono text-xs font-bold">3</span>
-            <h3>Execute Portable Payload</h3>
+          <div className="flex items-center gap-2 font-mono text-xs font-bold">
+            <span className="text-[#B08A3E]">iii.</span>
+            <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Execute Portable Payload</h3>
           </div>
           <p className="text-sm text-[#a1a1aa] leading-relaxed max-w-3xl pl-8">
             You receive <code className="text-[#a1a1aa] font-mono text-xs bg-[#111111] px-1.5 py-0.5 rounded border border-[#252525]">endpoint_triage.enc</code>. To execute it natively and seal the evidence in <strong>just one command</strong>:

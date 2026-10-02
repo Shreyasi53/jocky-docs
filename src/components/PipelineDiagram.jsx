@@ -1,13 +1,13 @@
 export default function PipelineDiagram() {
   const steps = [
-    { stage: '01', title: 'JOCKY SOURCE', desc: 'Declarative DSL file' },
-    { stage: '02', title: 'PARSER', desc: 'Lexical analysis & AST' },
-    { stage: '03', title: 'AST', desc: 'Abstract Syntax Tree' },
-    { stage: '04', title: 'SEMANTIC VALIDATION', desc: 'Capability constraint checks' },
-    { stage: '05', title: 'FORENSIC IR', desc: 'High-level forensic IR' },
-    { stage: '06', title: 'MLIR / FORENSIC DIALECT', desc: 'MLIR dialect passes' },
-    { stage: '07', title: 'LOWERING', desc: 'Target platform translation' },
-    { stage: '08', title: 'NATIVE OPERATION', desc: 'System collector execution' },
+    { stage: 'i.', title: 'JOCKY SOURCE', desc: 'Declarative DSL file' },
+    { stage: 'ii.', title: 'PARSER', desc: 'Lexical analysis & AST' },
+    { stage: 'iii.', title: 'AST', desc: 'Abstract Syntax Tree' },
+    { stage: 'iv.', title: 'SEMANTIC VALIDATION', desc: 'Capability constraint checks' },
+    { stage: 'v.', title: 'FORENSIC IR', desc: 'High-level forensic IR' },
+    { stage: 'vi.', title: 'MLIR / FORENSIC DIALECT', desc: 'MLIR dialect passes' },
+    { stage: 'vii.', title: 'LOWERING', desc: 'Target platform translation' },
+    { stage: 'viii.', title: 'NATIVE OPERATION', desc: 'System collector execution' },
   ];
 
   return (
