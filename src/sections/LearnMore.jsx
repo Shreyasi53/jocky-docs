@@ -3,23 +3,17 @@ import SectionHeader from '../components/SectionHeader';
 export default function LearnMore() {
   const links = [
     {
-      title: 'GitHub Organization',
+      title: 'GitHub Repo',
       description: 'Explore source code repositories, language specs, and compiler source.',
       href: 'https://github.com/Debashich/mahoraga.git',
       badge: 'Repository',
     },
     {
-      title: 'Interactive Demo',
+      title: 'Demo Video',
       description: 'Run sample JOCKY specs inside an isolated web environment [Placeholder].',
       href: '#',
       badge: 'Demo Placeholder',
-    },
-    {
-      title: 'Specification Documentation',
-      description: 'Detailed grammar reference, standard library docs, and dialect definitions [Placeholder].',
-      href: '#',
-      badge: 'Docs Placeholder',
-    },
+    }
   ];
 
   return (
