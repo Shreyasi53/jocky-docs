@@ -13,7 +13,7 @@ export default function Hero() {
             <img
               src="/jocky.png"
               alt="O"
-              className="h-[0.82em] sm:h-[0.85em] w-auto object-contain mx-[0.02em] shrink-0 self-center"
+              className="h-[0.82em] sm:h-[0.85em] w-auto object-contain mx-[0.02em] shrink-0 self-center animate-spin-slow"
             />
             <span>CKY</span>
           </h1>
