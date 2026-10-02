@@ -38,17 +38,7 @@
 }
 
 .hero-logo-spin {
-  animation: spin-slow 4.5s linear infinite;
-  transition: animation-duration 0.5s ease-out;
-}
-
-.hero-logo-spin:hover {
-  animation-duration: 1.2s;
-}
-
-.hero-logo-spin.is-boosting,
-.hero-logo-spin:active {
-  animation-duration: 0.4s;
+  animation: spin-slow 9s linear infinite;
 }
 
 @media (prefers-reduced-motion: reduce) {

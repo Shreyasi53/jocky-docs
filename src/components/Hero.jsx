@@ -1,15 +1,4 @@
-import { useState } from 'react';
-
 export default function Hero() {
-  const [boosting, setBoosting] = useState(false);
-
-  const handleClick = () => {
-    setBoosting(true);
-    setTimeout(() => {
-      setBoosting(false);
-    }, 1200);
-  };
-
   return (
     <section id="hero" className="pb-4 border-b border-[#252525] scroll-mt-20">
       <div className="space-y-2">
@@ -24,11 +13,7 @@ export default function Hero() {
             <img
               src="/jocky.png"
               alt="O"
-              onClick={handleClick}
-              title="Click for speed boost!"
-              className={`h-[0.98em] sm:h-[1.02em] w-auto object-contain mx-[0.02em] shrink-0 self-center cursor-pointer select-none hero-logo-spin ${
-                boosting ? 'is-boosting' : ''
-              }`}
+              className="h-[0.98em] sm:h-[1.02em] w-auto object-contain mx-[0.02em] shrink-0 self-center select-none hero-logo-spin"
             />
             <span>CKY</span>
           </h1>
