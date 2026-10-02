@@ -44,7 +44,7 @@ export default function LearnMore() {
                 <span className="text-[10px] font-mono text-[#71717a]">
                   {item.badge}
                 </span>
-                <span className="text-[#71717a] group-hover:text-[#00c896] font-mono text-xs transition-colors">↗</span>
+                <span className="text-[#71717a] group-hover:text-[#B08A3E] font-mono text-xs transition-colors">↗</span>
               </div>
               <h3 className="text-base font-bold font-sans text-[#f5f5f5] transition-colors">
                 {item.title}

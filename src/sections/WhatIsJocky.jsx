@@ -13,7 +13,7 @@ export default function WhatIsJocky() {
         {/* Stage 1: Problem */}
         <div className="space-y-3 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-semibold">
-            <span className="text-[#00c896]">01</span>
+            <span className="text-[#B08A3E]">01</span>
             <span className="text-[#71717a]">//</span>
             <span className="text-[#71717a]">PROBLEM</span>
           </div>
@@ -33,7 +33,7 @@ export default function WhatIsJocky() {
         {/* Stage 2: JOCKY's Approach */}
         <div className="space-y-3 pt-6 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-semibold">
-            <span className="text-[#00c896]">02</span>
+            <span className="text-[#B08A3E]">02</span>
             <span className="text-[#71717a]">//</span>
             <span className="text-[#71717a]">JOCKY'S APPROACH</span>
           </div>
@@ -48,7 +48,7 @@ export default function WhatIsJocky() {
         {/* Stage 3: Why a DSL + Compiler */}
         <div className="space-y-3 pt-6 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-semibold">
-            <span className="text-[#00c896]">03</span>
+            <span className="text-[#B08A3E]">03</span>
             <span className="text-[#71717a]">//</span>
             <span className="text-[#71717a]">WHY A DSL + COMPILER</span>
           </div>

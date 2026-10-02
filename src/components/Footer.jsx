@@ -6,7 +6,7 @@ export default function Footer() {
           <div className="space-y-1">
             <div className="flex items-center gap-2">
               <span className="font-mono font-bold text-base text-[#f5f5f5]">JOCKY</span>
-              <span className="text-[10px] font-mono text-[#00c896] bg-[#111111] border border-[#00c896]/40 px-1.5 py-0.5 rounded-sm">
+              <span className="text-[10px] font-mono text-[#B08A3E] bg-[#111111] border border-[#B08A3E]/40 px-1.5 py-0.5 rounded-sm">
                 DSL
               </span>
             </div>
@@ -24,7 +24,7 @@ export default function Footer() {
               Architecture
             </a>
             <a
-              href="https://github.com/Shreyasi53/mahoraga"
+              href="https://github.com/Debashich/mahoraga.git"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-[#f5f5f5] transition-colors flex items-center gap-1"

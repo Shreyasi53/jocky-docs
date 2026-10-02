@@ -1,5 +1,6 @@
 import SectionHeader from '../components/SectionHeader';
 import TerminalCard from '../components/TerminalCard';
+import CodeBlock from '../components/CodeBlock';
 
 export default function Installation() {
   return (
@@ -14,7 +15,7 @@ export default function Installation() {
         {/* 01 Requirements */}
         <div className="space-y-2.5 pt-3 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#00c896]">01.</span>
+            <span className="text-[#B08A3E]">01.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Requirements</h3>
           </div>
 
@@ -54,7 +55,7 @@ export default function Installation() {
         {/* 02 Clone the repository */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#00c896]">02.</span>
+            <span className="text-[#B08A3E]">02.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Clone the repository</h3>
           </div>
 
@@ -71,7 +72,7 @@ export default function Installation() {
         {/* 03 Python environment */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#00c896]">03.</span>
+            <span className="text-[#B08A3E]">03.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Python environment</h3>
           </div>
 
@@ -99,7 +100,7 @@ export default function Installation() {
         {/* 04 Install dependencies */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#00c896]">04.</span>
+            <span className="text-[#B08A3E]">04.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Install dependencies</h3>
           </div>
 
@@ -116,7 +117,7 @@ export default function Installation() {
         {/* 05 Build native runtime */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#00c896]">05.</span>
+            <span className="text-[#B08A3E]">05.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Build native runtime</h3>
           </div>
 
@@ -145,7 +146,7 @@ export default function Installation() {
         {/* 06 Start CMI backend */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#00c896]">06.</span>
+            <span className="text-[#B08A3E]">06.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Start backend</h3>
           </div>
 
@@ -174,7 +175,7 @@ export default function Installation() {
         {/* 07 Start frontend */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#00c896]">07.</span>
+            <span className="text-[#B08A3E]">07.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Start frontend</h3>
           </div>
 
@@ -198,7 +199,7 @@ export default function Installation() {
         {/* 08 Docker setup */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#00c896]">08.</span>
+            <span className="text-[#B08A3E]">08.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Docker setup</h3>
           </div>
 
@@ -226,7 +227,7 @@ export default function Installation() {
         {/* 09 Verify installation */}
         <div className="space-y-2.5 pt-4 border-t border-[#252525]">
           <div className="flex items-center gap-2 font-mono text-xs font-bold">
-            <span className="text-[#00c896]">09.</span>
+            <span className="text-[#B08A3E]">09.</span>
             <h3 className="text-sm font-bold text-[#f5f5f5] font-sans">Verify installation</h3>
           </div>
 
@@ -268,17 +269,20 @@ export default function Installation() {
         <div className="pt-4 border-t border-[#252525]">
           <h4 className="text-sm font-bold text-[#f5f5f5] font-sans mb-2">Generated Artifact Output</h4>
           <div className="grid grid-cols-1 md:grid-cols-12 gap-4 items-start">
-            <div className="md:col-span-6 p-2.5 rounded border border-[#252525] bg-[#111111]/80 font-mono text-xs text-[#a1a1aa]">
-              <pre className="whitespace-pre">
-                <code>{`out/
+            <div className="md:col-span-6">
+              <CodeBlock
+                title="Artifact Tree"
+                language="text"
+                showLineNumbers={false}
+                code={`out/
 ├── instructions/
 │   ├── <inv_id>.json
 │   └── <inv_id>.enc
 └── evidence/
     ├── raw_evidence.json
     ├── <inv_id>_sealed.json
-    └── <inv_id>_stix.json`}</code>
-              </pre>
+    └── <inv_id>_stix.json`}
+              />
             </div>
             <div className="md:col-span-6 text-xs text-[#a1a1aa] space-y-1.5 leading-relaxed font-sans">
               <p>

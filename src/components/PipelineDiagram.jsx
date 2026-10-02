@@ -17,7 +17,7 @@ export default function PipelineDiagram() {
           <div key={step.stage} className="relative">
             <div className="p-3 rounded-md border border-[#252525] bg-[#111111]/60 flex flex-col justify-between h-full hover:border-[#71717a] transition-colors">
               <div>
-                <span className="text-[10px] font-bold text-[#00c896] block mb-1">{step.stage}</span>
+                <span className="text-[10px] font-bold text-[#B08A3E] block mb-1">{step.stage}</span>
                 <span className="text-xs font-bold text-[#f5f5f5] block tracking-wide">{step.title}</span>
               </div>
               <span className="text-[11px] text-[#a1a1aa] font-sans mt-2">{step.desc}</span>

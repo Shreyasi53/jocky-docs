@@ -28,7 +28,7 @@ export default function QuickStart() {
         {/* Step 1: Write Spec */}
         <div className="space-y-3 pt-2">
           <div className="flex items-center gap-2.5 font-mono text-sm font-bold text-[#f5f5f5]">
-            <span className="w-6 h-6 rounded-full bg-[#00c896]/10 text-[#00c896] border border-[#00c896]/30 flex items-center justify-center font-mono text-xs font-bold">1</span>
+            <span className="w-6 h-6 rounded-full bg-[#B08A3E]/10 text-[#B08A3E] border border-[#B08A3E]/30 flex items-center justify-center font-mono text-xs font-bold">1</span>
             <h3>Write Investigation Specification</h3>
           </div>
           <p className="text-sm text-[#a1a1aa] leading-relaxed max-w-3xl pl-8">
@@ -47,7 +47,7 @@ export default function QuickStart() {
         {/* Step 2: Build Payload */}
         <div className="space-y-3 border-t border-[#252525] pt-6">
           <div className="flex items-center gap-2.5 font-mono text-sm font-bold text-[#f5f5f5]">
-            <span className="w-6 h-6 rounded-full bg-[#00c896]/10 text-[#00c896] border border-[#00c896]/30 flex items-center justify-center font-mono text-xs font-bold">2</span>
+            <span className="w-6 h-6 rounded-full bg-[#B08A3E]/10 text-[#B08A3E] border border-[#B08A3E]/30 flex items-center justify-center font-mono text-xs font-bold">2</span>
             <h3>Build the JOCKY Investigation</h3>
           </div>
           <p className="text-sm text-[#a1a1aa] leading-relaxed max-w-3xl pl-8">
@@ -87,7 +87,7 @@ export default function QuickStart() {
         {/* Step 3: Execute Payload */}
         <div className="space-y-3 border-t border-[#252525] pt-6">
           <div className="flex items-center gap-2.5 font-mono text-sm font-bold text-[#f5f5f5]">
-            <span className="w-6 h-6 rounded-full bg-[#00c896]/10 text-[#00c896] border border-[#00c896]/30 flex items-center justify-center font-mono text-xs font-bold">3</span>
+            <span className="w-6 h-6 rounded-full bg-[#B08A3E]/10 text-[#B08A3E] border border-[#B08A3E]/30 flex items-center justify-center font-mono text-xs font-bold">3</span>
             <h3>Execute Portable Payload</h3>
           </div>
           <p className="text-sm text-[#a1a1aa] leading-relaxed max-w-3xl pl-8">

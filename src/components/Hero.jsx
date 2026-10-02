@@ -3,14 +3,19 @@ export default function Hero() {
     <section id="hero" className="pb-4 border-b border-[#252525] scroll-mt-20">
       <div className="space-y-2">
         <div className="flex items-center gap-2 text-[11px] font-mono text-[#71717a] uppercase tracking-wider">
-          <span className="w-1.5 h-1.5 rounded-full bg-[#00c896]"></span>
+          <span className="w-1.5 h-1.5 rounded-full bg-[#B08A3E]"></span>
           Domain-Specific Forensic Language
         </div>
 
-        <div className="flex items-center gap-3 pt-1">
-          <img src="/jocky.png" alt="Jocky Logo" className="w-10 h-10 sm:w-12 sm:h-12 object-contain" />
-          <h1 className="text-3xl sm:text-4xl font-extrabold text-[#f5f5f5] tracking-tight font-sans">
-            JOCKY
+        <div className="pt-1">
+          <h1 className="text-3xl sm:text-4xl font-extrabold text-[#f5f5f5] tracking-tight font-sans inline-flex items-center leading-none">
+            <span>J</span>
+            <img
+              src="/jocky.png"
+              alt="O"
+              className="h-[0.82em] sm:h-[0.85em] w-auto object-contain mx-[0.02em] shrink-0 self-center"
+            />
+            <span>CKY</span>
           </h1>
         </div>
 

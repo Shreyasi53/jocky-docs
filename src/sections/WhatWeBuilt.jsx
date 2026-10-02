@@ -25,7 +25,7 @@ export default function WhatWeBuilt() {
             key={item.title}
             className="py-3 border-b border-[#252525] last:border-b-0 flex items-start gap-4"
           >
-            <span className="font-mono text-xs font-bold text-[#00c896] shrink-0 mt-0.5">
+            <span className="font-mono text-xs font-bold text-[#B08A3E] shrink-0 mt-0.5">
               0{index + 1}.
             </span>
             <div className="space-y-0.5">

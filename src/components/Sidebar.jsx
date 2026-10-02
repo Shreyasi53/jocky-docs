@@ -32,7 +32,7 @@ export default function Sidebar({ mobileOpen, onClose }) {
       group: 'RESOURCES',
       items: [
         { name: 'Learn More', href: '#learn-more' },
-        { name: 'GitHub', href: 'https://github.com/Debashich/mahoraga', external: true },
+        { name: 'GitHub', href: 'https://github.com/Debashich/mahoraga.git', external: true },
       ],
     },
   ];
@@ -128,7 +128,7 @@ export default function Sidebar({ mobileOpen, onClose }) {
                     rel={item.external ? 'noopener noreferrer' : undefined}
                     className={`block pl-3 py-0.5 -ml-px transition-colors leading-normal ${
                       isActive
-                        ? 'text-[#00c896] font-medium border-l border-[#00c896]'
+                        ? 'text-[#B08A3E] font-medium border-l border-[#B08A3E]'
                         : 'text-[#a1a1aa] hover:text-[#f5f5f5] border-l border-transparent'
                     }`}
                   >
@@ -160,7 +160,7 @@ export default function Sidebar({ mobileOpen, onClose }) {
           <div className="relative w-64 max-w-full bg-[#090909] border-r border-[#252525] p-5 overflow-y-auto z-10 space-y-5">
             <div className="flex items-center justify-between border-b border-[#252525] pb-3">
               <div className="flex items-center gap-2 font-mono text-xs font-bold text-[#f5f5f5]">
-                <span className="text-[#00c896]">JK</span> JOCKY DOCS
+                <span className="text-[#B08A3E]">JK</span> JOCKY DOCS
               </div>
               <button
                 type="button"
